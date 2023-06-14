@@ -13,12 +13,17 @@ public class HomeController : Controller
         _logger = logger;
     }
 
-    public IActionResult Index()
+    public IActionResult MainPage()
     {
         return View();
     }
 
-    public IActionResult Privacy()
+    public IActionResult ModelsOfBus()
+    {
+        return View();
+    }
+    
+    public IActionResult TransportCompany()
     {
         return View();
     }

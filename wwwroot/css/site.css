@@ -20,3 +20,18 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.text-center-main-page {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.text-center-model-of-bus {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.text-center-transport-company {
+  text-align: center;
+  margin-top: 50px;
+}
