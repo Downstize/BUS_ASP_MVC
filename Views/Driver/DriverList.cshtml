@@ -1,0 +1,37 @@
+@model System.Collections.Generic.List<bus_project.Models.DriverModel.Driver>
+
+<h2 class="display-4">Список водителей</h2>
+
+<table class="company-table">
+    <thead>
+    <tr>
+        <th>Id смены водителя</th>
+        <th>Лицензия</th>
+        <th>Номер маршрута</th>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Отчество</th>
+        <th>Стаж</th>
+        <th>Пол</th>
+        <th>Возраст</th>
+        <th>Номер телефона</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var driver in Model)
+    {
+        <tr>
+            <td>@driver.driver_shift_id</td>
+            <td>@driver.license</td>
+            <td>@driver.route_number</td>
+            <td>@driver.driver_name</td>
+            <td>@driver.driver_surname</td>
+            <td>@driver.driver_third_name</td>
+            <td>@driver.experience</td>
+            <td>@driver.gender</td>
+            <td>@driver.driver_age</td>
+            <td>@driver.telephone_number</td>
+        </tr>
+    }
+    </tbody>
+</table>

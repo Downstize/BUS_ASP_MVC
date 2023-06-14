@@ -1,0 +1,27 @@
+@model System.Collections.Generic.List<bus_project.Models.VehicleModel.Vehicle>
+
+<h2 class="display-4">Список авто</h2>
+
+<table class="company-table">
+    <thead>
+    <tr>
+        <th>Регистрационный номер</th>
+        <th>Название модели</th>
+        <th>Номер маршрута</th>
+        <th>Состояние авто</th>
+        <th>Вместимость</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var vehicle in Model)
+    {
+        <tr>
+            <td>@vehicle.reg_number</td>
+            <td>@vehicle.model_name</td>
+            <td>@vehicle.route_number</td>
+            <td>@vehicle.vh_condition</td>
+            <td>@vehicle.capacity</td>
+        </tr>
+    }
+    </tbody>
+</table>

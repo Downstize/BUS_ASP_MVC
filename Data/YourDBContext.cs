@@ -11,11 +11,21 @@ namespace bus_project.Data
 
         public DbSet<TransportCompanyModel.TransportCompany> TransportCompanies { get; set; }
         public DbSet<BusTypeModel.BusType> BusTypes { get; set; }
+        public DbSet<VehicleModel.Vehicle> VehicleTypes { get; set; }
+        public DbSet<StopModel.Stop> StopsAmmount { get; set; }
+        public DbSet<RouteModel.Route> RoutesList { get; set; }
+        public DbSet<PointModel.Point> PointsList { get; set; }
+        public DbSet<DriverModel.Driver> DriversList { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<TransportCompanyModel.TransportCompany>().ToTable("transport_company");
             modelBuilder.Entity<BusTypeModel.BusType>().ToTable("model");
+            modelBuilder.Entity<VehicleModel.Vehicle>().ToTable("vehicle");
+            modelBuilder.Entity<StopModel.Stop>().ToTable("stop");
+            modelBuilder.Entity<RouteModel.Route>().ToTable("route");
+            modelBuilder.Entity<PointModel.Point>().ToTable("point");
+            modelBuilder.Entity<DriverModel.Driver>().ToTable("driver");
         }
     }
 }

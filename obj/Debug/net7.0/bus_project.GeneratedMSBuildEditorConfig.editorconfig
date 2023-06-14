@@ -28,6 +28,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9UcmFuc3BvcnRDb21wYW55LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/downstize/С\# Projects/bus_project/Views/Driver/DriverList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvRHJpdmVyL0RyaXZlckxpc3QuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/downstize/С\# Projects/bus_project/Views/Home/MainPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NYWluUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -36,12 +40,28 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Nb2RlbHNPZkJ1cy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/downstize/С\# Projects/bus_project/Views/Point/PointList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUG9pbnQvUG9pbnRMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/downstize/С\# Projects/bus_project/Views/Route/RouteList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvUm91dGUvUm91dGVMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/downstize/С\# Projects/bus_project/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL0Vycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/downstize/С\# Projects/bus_project/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU2hhcmVkL19WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/downstize/С\# Projects/bus_project/Views/Stop/StopAmmount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvU3RvcC9TdG9wQW1tb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/downstize/С\# Projects/bus_project/Views/Vehicle/VehicleType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvVmVoaWNsZS9WZWhpY2xlVHlwZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/downstize/С\# Projects/bus_project/Views/_ViewImports.cshtml]

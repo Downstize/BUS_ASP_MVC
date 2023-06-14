@@ -1,0 +1,23 @@
+@model System.Collections.Generic.List<bus_project.Models.StopModel.Stop>
+
+<h2 class="display-4">Список остановок</h2>
+
+<table class="company-table">
+    <thead>
+    <tr>
+        <th>Номер остановки</th>
+        <th>Наименование остановки</th>
+        <th>Координаты</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var stop in Model)
+    {
+        <tr>
+            <td>@stop.stop_number</td>
+            <td>@stop.stop_name</td>
+            <td>@stop.coordinates</td>
+        </tr>
+    }
+    </tbody>
+</table>

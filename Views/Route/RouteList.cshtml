@@ -1,0 +1,25 @@
+@model System.Collections.Generic.List<bus_project.Models.RouteModel.Route>
+
+<h2 class="display-4">Список маршрутов</h2>
+
+<table class="company-table">
+    <thead>
+    <tr>
+        <th>Номер маршрута</th>
+        <th>Наименование компании</th>
+        <th>Длина маршрута, км.</th>
+        <th>Время проезда по всему маршруту</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var route in Model)
+    {
+        <tr>
+            <td>@route.route_number</td>
+            <td>@route.company_name</td>
+            <td>@route.route_length</td>
+            <td>@route.route_time</td>
+        </tr>
+    }
+    </tbody>
+</table>
