@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Выбор таблицы";
+}
+
+<h2>Выберите таблицу для работы</h2>
+
+<form asp-controller="Data" asp-action="Index" method="get">
+    <div class="form-group">
+        <label for="table">Таблица:</label>
+        <select class="form-control" id="table" name="table">
+            <option value="TransportCompany">Транспортные компании</option>
+            <option value="BusType">Модели автобусов</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary custom-button">Выбрать</button>
+</form>
