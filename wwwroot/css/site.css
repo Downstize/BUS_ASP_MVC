@@ -35,3 +35,21 @@ body {
   text-align: center;
   margin-top: 50px;
 }
+.company-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.company-table th,
+.company-table td {
+  padding: 10px;
+}
+
+.company-table th {
+  text-align: left;
+  background-color: #f2f2f2;
+}
+
+.company-table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}

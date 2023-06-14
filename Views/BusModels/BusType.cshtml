@@ -1,0 +1,29 @@
+@model System.Collections.Generic.List<bus_project.Models.BusTypeModel.BusType>
+
+<h2 class="display-4">Список моделей автобусов</h2>
+
+<table class="company-table">
+    <thead>
+    <tr>
+        <th>Наименование модели</th>
+        <th>Мощность двигателя л.с.</th>
+        <th>Категория</th>
+        <th>Масса с нагрузкой</th>
+        <th>Масса без нагрузки</th>
+        <th>Год выпуска</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var bus in Model)
+    {
+        <tr>
+            <td>@bus.model_name</td>
+            <td>@bus.engine_power</td>
+            <td>@bus.category</td>
+            <td>@bus.permitted_weight</td>
+            <td>@bus.unladen_mass</td>
+            <td>@bus.year_release</td>
+        </tr>
+    }
+    </tbody>
+</table>

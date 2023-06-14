@@ -16,16 +16,20 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = /Users/downstize/С# Projects/bus_project
 build_property._RazorSourceGeneratorDebug = 
 
+[/Users/downstize/С\# Projects/bus_project/Views/BusModels/BusType.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQnVzTW9kZWxzL0J1c1R5cGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/downstize/С\# Projects/bus_project/Views/Company/TransportCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9UcmFuc3BvcnRDb21wYW55LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/downstize/С\# Projects/bus_project/Views/Home/MainPage.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9NYWluUGFnZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/downstize/С\# Projects/bus_project/Views/Home/ModelsOfBus.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9Nb2RlbHNPZkJ1cy5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[/Users/downstize/С\# Projects/bus_project/Views/Home/TransportCompany.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3MvSG9tZS9UcmFuc3BvcnRDb21wYW55LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [/Users/downstize/С\# Projects/bus_project/Views/Shared/Error.cshtml]

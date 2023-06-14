@@ -1,8 +1,24 @@
 {
   "version": 2,
-  "dgSpecHash": "yWliag1AqPR2LFKgzDc+Ejxm/bKEKwl+AnueNnIHdGCl8cINa7kQaPk6HRD7l57xfsFbmP1WrLhlA14MpUUc1Q==",
+  "dgSpecHash": "dAxEbtxTc9HqI061oJW253rNhI19L0WhvjeFAI6KZB08/meq8zrDjiweoE95xCLobl17rGZs6QfK+LsJX+Zc3Q==",
   "success": true,
   "projectFilePath": "/Users/downstize/С# Projects/bus_project/bus_project.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/downstize/.nuget/packages/microsoft.entityframeworkcore/7.0.7/microsoft.entityframeworkcore.7.0.7.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.entityframeworkcore.abstractions/7.0.7/microsoft.entityframeworkcore.abstractions.7.0.7.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.entityframeworkcore.analyzers/7.0.7/microsoft.entityframeworkcore.analyzers.7.0.7.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.entityframeworkcore.relational/7.0.5/microsoft.entityframeworkcore.relational.7.0.5.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.caching.abstractions/7.0.0/microsoft.extensions.caching.abstractions.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.caching.memory/7.0.0/microsoft.extensions.caching.memory.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.configuration.abstractions/7.0.0/microsoft.extensions.configuration.abstractions.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.dependencyinjection/7.0.0/microsoft.extensions.dependencyinjection.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/7.0.0/microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.logging/7.0.0/microsoft.extensions.logging.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.logging.abstractions/7.0.0/microsoft.extensions.logging.abstractions.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.options/7.0.0/microsoft.extensions.options.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/microsoft.extensions.primitives/7.0.0/microsoft.extensions.primitives.7.0.0.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/npgsql/7.0.4/npgsql.7.0.4.nupkg.sha512",
+    "/Users/downstize/.nuget/packages/npgsql.entityframeworkcore.postgresql/7.0.4/npgsql.entityframeworkcore.postgresql.7.0.4.nupkg.sha512"
+  ],
   "logs": []
 }

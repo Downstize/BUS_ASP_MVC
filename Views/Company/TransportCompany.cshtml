@@ -1,0 +1,23 @@
+@model System.Collections.Generic.List<bus_project.Models.TransportCompanyModel.TransportCompany>
+
+<h2 class="display-4">Список транспортных компаний</h2>
+
+<table class="company-table">
+    <thead>
+    <tr>
+        <th>Наименование компании</th>
+        <th>Контактная информация</th>
+        <th>Адрес</th>
+    </tr>
+    </thead>
+    <tbody>
+    @foreach (var company in Model)
+    {
+        <tr>
+            <td>@company.company_name</td>
+            <td>@company.contact_info</td>
+            <td>@company.address</td>
+        </tr>
+    }
+    </tbody>
+</table>
