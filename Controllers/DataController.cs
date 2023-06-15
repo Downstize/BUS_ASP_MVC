@@ -40,6 +40,5 @@ public class DataController : Controller
                 return View("~/Views/Changes/ChangeSMTH.cshtml");
         }
     }
-
-    // Другие методы для создания, редактирования и удаления данных
+    
 }

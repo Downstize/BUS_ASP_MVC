@@ -1,0 +1,9 @@
+@model bus_project.Models.TransportCompanyModel.TransportCompany
+
+<!-- Форма для удаления транспортной компании -->
+<form asp-action="DeleteCompanyConfirmed" asp-route-id="@Model.company_name" method="post">
+    <div class="alert alert-warning">
+        <p>Вы уверены, что хотите удалить транспортную компанию "@Model.company_name"?</p>
+    </div>
+    <button type="submit" class="btn btn-danger">Удалить</button>
+</form>

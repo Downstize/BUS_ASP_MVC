@@ -1,23 +1,30 @@
 @model System.Collections.Generic.List<bus_project.Models.TransportCompanyModel.TransportCompany>
 
 <h2 class="display-4">Список транспортных компаний</h2>
-
+<p>
+    <a asp-action="CreateCompany" class="btn btn-primary">Добавить компанию</a>
+</p>
 <table class="company-table">
     <thead>
-    <tr>
-        <th>Наименование компании</th>
-        <th>Контактная информация</th>
-        <th>Адрес</th>
-    </tr>
-    </thead>
-    <tbody>
-    @foreach (var company in Model)
-    {
-        <tr>
-            <td>@company.company_name</td>
-            <td>@company.contact_info</td>
-            <td>@company.address</td>
-        </tr>
-    }
-    </tbody>
+            <tr>
+                <th>Наименование</th>
+                <th>Контактная информация</th>
+                <th>Адрес</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var company in Model)
+            {
+                <tr>
+                    <td>@company.company_name</td>
+                    <td>@company.contact_info</td>
+                    <td>@company.address</td>
+                    <td>
+                        <a asp-action="EditCompany" asp-route-id="@company.company_name" class="btn btn-primary">Редактировать</a>
+                        <a asp-action="DeleteCompany" asp-route-id="@company.company_name" class="btn btn-danger">Удалить</a>
+                    </td>
+                </tr>
+            }
+        </tbody>
 </table>

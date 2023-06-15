@@ -24,6 +24,18 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ2hhbmdlcy9DaGFuZ2VTTVRILmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[/Users/downstize/С\# Projects/bus_project/Views/Company/CreateCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9DcmVhdGVDb21wYW55LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/downstize/С\# Projects/bus_project/Views/Company/DeleteCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9EZWxldGVDb21wYW55LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[/Users/downstize/С\# Projects/bus_project/Views/Company/EditCompany.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9FZGl0Q29tcGFueS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [/Users/downstize/С\# Projects/bus_project/Views/Company/TransportCompany.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3MvQ29tcGFueS9UcmFuc3BvcnRDb21wYW55LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
