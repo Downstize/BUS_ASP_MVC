@@ -20,6 +20,13 @@ public class TransportCompanyController : Controller
         return View("~/Views/Company/TransportCompany.cshtml", transportCompanies);
 
     }
+    
+    public IActionResult HomeTransportCompany()
+    {
+        var transportCompanies = _dbContext.TransportCompanies.ToList();
+        return View("~/Views/Home/TransportCompanyHomeView.cshtml", transportCompanies);
+
+    }
 
 // Метод для добавления новой транспортной компании (показ формы)
     public IActionResult CreateCompany()
