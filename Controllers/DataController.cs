@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 
 public class DataController : Controller
 {
-    private readonly YourDbContext _dbContext;
+    private readonly DBContext _dbContext;
 
-    public DataController(YourDbContext dbContext)
+    public DataController(DBContext dbContext)
     {
         _dbContext = dbContext;
     }

@@ -5,9 +5,9 @@ namespace bus_project.Controllers;
 
 public class RouteController : Controller
 {
-    private readonly YourDbContext _dbContext;
+    private readonly DBContext _dbContext;
 
-    public RouteController(YourDbContext dbContext)
+    public RouteController(DBContext dbContext)
     {
         _dbContext = dbContext;
     }

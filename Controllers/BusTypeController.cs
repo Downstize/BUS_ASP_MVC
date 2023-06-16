@@ -5,9 +5,9 @@ namespace bus_project.Controllers;
 
 public class BusTypeController : Controller
 {
-    private readonly YourDbContext _dbContext;
+    private readonly DBContext _dbContext;
 
-    public BusTypeController(YourDbContext dbContext)
+    public BusTypeController(DBContext dbContext)
     {
         _dbContext = dbContext;
     }

@@ -5,9 +5,9 @@ namespace bus_project.Controllers;
 
 public class DriverController : Controller
 {
-    private readonly YourDbContext _dbContext;
+    private readonly DBContext _dbContext;
 
-    public DriverController(YourDbContext dbContext)
+    public DriverController(DBContext dbContext)
     {
         _dbContext = dbContext;
     }

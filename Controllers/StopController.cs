@@ -5,9 +5,9 @@ namespace bus_project.Controllers;
 
 public class StopController : Controller
 {
-    private readonly YourDbContext _dbContext;
+    private readonly DBContext _dbContext;
 
-    public StopController(YourDbContext dbContext)
+    public StopController(DBContext dbContext)
     {
         _dbContext = dbContext;
     }

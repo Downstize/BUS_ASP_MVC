@@ -7,9 +7,9 @@ namespace bus_project.Controllers;
 
 public class TransportCompanyController : Controller
 {
-    private readonly YourDbContext _dbContext;
+    private readonly DBContext _dbContext;
 
-    public TransportCompanyController(YourDbContext dbContext)
+    public TransportCompanyController(DBContext dbContext)
     {
         _dbContext = dbContext;
     }

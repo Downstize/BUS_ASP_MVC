@@ -9,7 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 
 var connectionString = "Host=localhost;Port=5050;Database=DBATransportProject;Username=postgres;Password=3961598;";
-builder.Services.AddDbContext<YourDbContext>(options =>
+builder.Services.AddDbContext<DBContext>(options =>
     options.UseNpgsql(connectionString));
 
 // Add services to the container.

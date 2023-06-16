@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 
 namespace bus_project.Data
 {
-    public class YourDbContext : DbContext
+    public class DBContext : DbContext
     {
-        public YourDbContext(DbContextOptions<YourDbContext> options) : base(options)
+        public DBContext(DbContextOptions<DBContext> options) : base(options)
         {
         }
 

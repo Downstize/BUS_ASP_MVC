@@ -5,9 +5,9 @@ namespace bus_project.Controllers;
 
 public class PointController : Controller
 {
-    private readonly YourDbContext _dbContext;
+    private readonly DBContext _dbContext;
 
-    public PointController(YourDbContext dbContext)
+    public PointController(DBContext dbContext)
     {
         _dbContext = dbContext;
     }
