@@ -23,8 +23,8 @@ public class TransportCompanyController : Controller
     
     public IActionResult HomeTransportCompany()
     {
-        var transportCompanies = _dbContext.TransportCompanies.ToList();
-        return View("~/Views/Home/TransportCompanyHomeView.cshtml", transportCompanies);
+        var HometransportCompanies = _dbContext.TransportCompanies.ToList();
+        return View("~/Views/Home/TransportCompanyHomeView.cshtml", HometransportCompanies);
 
     }
 

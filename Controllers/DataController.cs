@@ -56,32 +56,93 @@ public class DataController : Controller
 
         return View("~/Views/BusModels/BusType.cshtml", buses);
     }
+    
+    public IActionResult TransportCompany()
+    {
+        var transportCompanies = _dbContext.TransportCompanies.ToList();
+        return View("~/Views/Company/TransportCompany.cshtml", transportCompanies);
 
-    // Действие для отображения маршрутов и соответствующих им моделей машин для выбранной компании (запрос: Маршруты компании "AVRORATUR")
-//     public IActionResult RoutesForCompany(string companyName)
-//     {
-//         var routes = _dbContext.RoutesList.Where(r => r.company_name == companyName).ToList();
-//         var vehicles = _dbContext.VehicleTypes.Where(v => routes.Any(r => r.route_number == v.route_number)).ToList();
-//
-//         var routesForCompanyViewModel = new RoutesForCompanyViewModel
-//         {
-//             Routes = routes,
-//             Vehicles = vehicles
-//         };
-//
-//         return View("RoutesForCompany", routesForCompanyViewModel);
-//     }
-//
-//     // Добавьте другие действия в соответствии с вашими запросами
-// }
-// var vehicleModels = new List<VehicleModel>();
-// foreach (var vehicle in vehicles)
-// {
-//     var vehicleModel = new VehicleModel
-//     {
-//         model_name = vehicle.model_name
-//     };
-//     vehicleModels.Add(vehicleModel);
-// }
+    }
+// Метод для добавления новой транспортной компании (показ формы)
+    public IActionResult CreateCompany()
+    {
+        var model = new TransportCompanyModel.TransportCompany();
+        return View("~/Views/Company/CreateCompany.cshtml", model);
+    }
 
+// Метод для сохранения новой транспортной компании
+    [HttpPost]
+    public IActionResult CreateCompany(TransportCompanyModel.TransportCompany company)
+    {
+        if (ModelState.IsValid)
+        {
+            _dbContext.TransportCompanies.Add(company);
+            _dbContext.SaveChanges();
+            return RedirectToAction("TransportCompany");
+        }
+
+        return View("~/Views/Company/CreateCompany.cshtml", company);
+    }
+
+// Метод для редактирования существующей транспортной компании (показ формы)
+    public  IActionResult EditCompany(string id)
+    {
+        var company =  _dbContext.TransportCompanies.FirstOrDefault(c => c.company_name == id);
+        if (company == null)
+        {
+            return NotFound();
+        }
+
+        return View("~/Views/Company/EditCompany.cshtml", company);
+    }
+
+    [HttpPost]
+    public IActionResult EditCompany(string id, TransportCompanyModel.TransportCompany company)
+    {
+        if (ModelState.IsValid)
+        {
+            var existingCompany = _dbContext.TransportCompanies.Find(id);
+            if (existingCompany == null)
+            {
+                return NotFound();
+            }
+
+            existingCompany.company_name = company.company_name;
+            existingCompany.contact_info = company.contact_info;
+            existingCompany.address = company.address;
+            // Обновите другие поля, если таковые имеются
+
+            _dbContext.SaveChanges();
+            return RedirectToAction("TransportCompany");
+        }
+
+        return View("~/Views/Company/EditCompany.cshtml", company);
+    }
+    
+    [HttpGet]
+    public IActionResult DeleteCompany(string id)
+    {
+        var company = _dbContext.TransportCompanies.FirstOrDefault(c => c.company_name == id);
+        if (company == null)
+        {
+            return NotFound();
+        }
+
+        return View("~/Views/Company/DeleteCompany.cshtml", company);
+    }
+
+    [HttpPost]
+    public IActionResult DeleteCompanyConfirmed(string id)
+    {
+        var company = _dbContext.TransportCompanies.FirstOrDefault(c => c.company_name == id);
+        if (company == null)
+        {
+            return NotFound();
+        }
+
+        _dbContext.TransportCompanies.Remove(company);
+        _dbContext.SaveChanges();
+        return RedirectToAction("TransportCompany");
+    }
+    
 }
