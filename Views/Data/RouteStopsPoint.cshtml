@@ -1,0 +1,26 @@
+@model bus_project.Models.RouteModel
+
+<h2>Маршрут: @Model.route_number</h2>
+
+<h3>Точки:</h3>
+<table class="company-table">
+    <thead>
+        <tr>
+            <th>Точка ID</th>
+            <th>Номер маршрута</th>
+            <th>Остановка</th>
+            <th>Индексный номер</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var point in ((List<bus_project.Models.PointModel.Point>)ViewData["PointList"]).OrderBy(p => p.index_number))
+        {
+            <tr>
+                <td>@point.point_id</td>
+                <td>@point.route_number</td>
+                <td>@point.Stop.stop_name</td>
+                <td>@point.index_number</td>
+            </tr>
+        }
+    </tbody>
+</table>

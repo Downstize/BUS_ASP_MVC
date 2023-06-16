@@ -1,6 +1,7 @@
 using bus_project.Data;
 using bus_project.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 public class DataController : Controller
 {
@@ -57,6 +58,45 @@ public class DataController : Controller
         return View("~/Views/BusModels/BusType.cshtml", buses);
     }
     
+    public IActionResult RouteStopPoint()
+    {
+        var route = _dbContext.RoutesList
+            .Include(r => r.TransportCompany)
+            .FirstOrDefault(r => r.route_number == 852);
+
+        var pointList = _dbContext.PointsList
+            .Include(p => p.Route)
+            .Include(p => p.Stop)
+            .Where(p => p.route_number == route.route_number)
+            .ToList();
+
+        ViewData["Route"] = route;
+        ViewData["PointList"] = pointList;
+
+        return View("~/Views/Data/RouteStopsPoint.cshtml", route);
+    }
+
+
+    
+    // [HttpGet]
+    // public IActionResult RouteStopPoint()
+    // {
+    //     var route = _dbContext.RoutesList.FirstOrDefault(r => r.route_number == 852);
+    //     var stopList = _dbContext.StopsAmmount.Where(s => s.stop_number == p.stop_number).ToList();
+    //     if (route == null)
+    //     {
+    //         return NotFound(); // Маршрут не найден, возвращаем ошибку 404
+    //     }
+    //
+    //     var pointList = _dbContext.PointsList.Where(p => p.route_number == route.route_number).ToList();
+    //
+    //
+    //     ViewData["PointsList"] = pointList;
+    //     ViewData["StopsAmmount"] = stopList;
+    //
+    //     return View("~/Views/BusModels/BusType.cshtml");
+    // }
+
     public IActionResult TransportCompany()
     {
         var transportCompanies = _dbContext.TransportCompanies.ToList();
