@@ -1,4 +1,5 @@
 using bus_project.Data;
+using bus_project.Models;
 using Microsoft.AspNetCore.Mvc;
 
 public class DataController : Controller
@@ -9,7 +10,7 @@ public class DataController : Controller
     {
         _dbContext = dbContext;
     }
-
+    
     public IActionResult Index(string table)
     {
         
@@ -41,4 +42,46 @@ public class DataController : Controller
         }
     }
     
+    [HttpGet]
+    public IActionResult StopsForRoute()
+    {
+        return View();
+    }
+    
+
+    [HttpGet]
+    public IActionResult BusesWithMoreThan180HP()
+    {
+        var buses = _dbContext.BusTypes.Where(b => b.engine_power > 180).ToList();
+
+        return View("~/Views/BusModels/BusType.cshtml", buses);
+    }
+
+    // Действие для отображения маршрутов и соответствующих им моделей машин для выбранной компании (запрос: Маршруты компании "AVRORATUR")
+//     public IActionResult RoutesForCompany(string companyName)
+//     {
+//         var routes = _dbContext.RoutesList.Where(r => r.company_name == companyName).ToList();
+//         var vehicles = _dbContext.VehicleTypes.Where(v => routes.Any(r => r.route_number == v.route_number)).ToList();
+//
+//         var routesForCompanyViewModel = new RoutesForCompanyViewModel
+//         {
+//             Routes = routes,
+//             Vehicles = vehicles
+//         };
+//
+//         return View("RoutesForCompany", routesForCompanyViewModel);
+//     }
+//
+//     // Добавьте другие действия в соответствии с вашими запросами
+// }
+// var vehicleModels = new List<VehicleModel>();
+// foreach (var vehicle in vehicles)
+// {
+//     var vehicleModel = new VehicleModel
+//     {
+//         model_name = vehicle.model_name
+//     };
+//     vehicleModels.Add(vehicleModel);
+// }
+
 }

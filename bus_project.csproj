@@ -15,4 +15,8 @@
       <Content Remove="Views\Home\TransportCompany.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Requests\RequestList.cshtml" />
+    </ItemGroup>
+
 </Project>

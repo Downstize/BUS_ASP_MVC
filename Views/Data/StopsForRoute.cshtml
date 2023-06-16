@@ -1,0 +1,32 @@
+@{
+    ViewData["Title"] = "Выбор запроса";
+}
+
+<h2>Выберите запрос для выполнения</h2>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Название запроса</th>
+        <th>Описание</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Автобусы 180 л.с.+</td>
+        <td>Получить список всех моделей автобусов с мощностью двигателя более 180 л.с. и их категорий</td>
+        <td>
+            <a class="btn btn-primary" href="@Url.Action("BusesWithMoreThan180HP", controller:"Data")">Выбрать</a>
+        </td>
+    </tr>
+    <tr>
+            <td>Маршруты компании "AVRORATUR"</td>
+            <td>Получить список всех маршрутов компании "AVRORATUR" и соответствующих им моделей машин</td>
+            <td>
+                <a class="btn btn-primary" href="@Url.Action("StopsForRoute", "Data", new { routeId = 852 })">Выбрать</a>
+            </td>
+        </tr>
+    <!-- Добавьте другие запросы в соответствии с вашими требованиями -->
+    </tbody>
+</table>

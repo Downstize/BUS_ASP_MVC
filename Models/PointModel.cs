@@ -10,8 +10,15 @@ public class PointModel
     {
         [Key]
         public int point_id { get; set; }
+
+        [ForeignKey("Route")]
         public int route_number { get; set; }
+        public RouteModel Route { get; set; }
+
+        [ForeignKey("Stop")]
         public int stop_number { get; set; }
+        public StopModel.Stop Stop { get; set; }
+
         public int index_number { get; set; }
     }
 }

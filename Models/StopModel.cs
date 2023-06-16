@@ -10,7 +10,11 @@ public class StopModel
     {
         [Key]
         public int stop_number { get; set; }
+
+        [Required]
         public string stop_name { get; set; }
+
+        [Required]
         public string coordinates { get; set; }
     }
 }
