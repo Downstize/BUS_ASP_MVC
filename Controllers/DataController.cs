@@ -38,7 +38,7 @@ public class DataController : Controller
                 var driversList = _dbContext.DriversList.ToList();
                 return View("~/Views/Driver/DriverList.cshtml", driversList);
             default:
-                return View("~/Views/Changes/ChangeSMTH.cshtml");
+                return View("~/Views/Changes/TableChange.cshtml");
         }
     }
     

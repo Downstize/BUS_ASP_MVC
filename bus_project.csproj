@@ -19,4 +19,8 @@
       <_ContentIncludedByDefault Remove="Views\Requests\RequestList.cshtml" />
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Pages\" />
+    </ItemGroup>
+
 </Project>
